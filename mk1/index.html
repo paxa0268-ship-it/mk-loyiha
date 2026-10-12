@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Maktab hayotini yaxshilash uchun o‘quvchilar ovozi va ochiq muloqot platformasi.">
+  <title>Maktab Ovozi — fikringiz muhim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css/mk.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Maktab Ovozi bosh sahifasi" data-page="home">
+        <span class="brand-mark">ov<span>.</span></span>
+        <span class="brand-copy"><strong>maktab ovozi</strong><small>Fikringiz muhim</small></span>
+      </a>
+      <div class="school-switch"><span class="school-icon">✳</span><span><strong>Umumiy o‘rta ta’lim</strong><small>Namuna maktabi</small></span><span class="chevron">⌄</span></div>
+      <p class="nav-label">PLATFORMA</p>
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span> Bosh sahifa</button>
+        <button class="nav-item" data-page="proposals"><span class="nav-icon">◈</span> Takliflar <span class="nav-count" id="nav-open-count">4</span></button>
+        <button class="nav-item" data-page="results"><span class="nav-icon">▥</span> Natijalar</button>
+      </nav>
+      <p class="nav-label nav-label-spaced">BOSHQARUV</p>
+      <nav class="main-nav" aria-label="Boshqaruv">
+        <button class="nav-item" data-page="admin"><span class="nav-icon">⚙</span> Admin paneli</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✳</span><strong>Har bir fikr muhim.</strong><p>Taklifingiz bormi? Maktabimizni birga yaxshilaylik.</p><button data-page="proposals" class="text-action">Takliflarni ko‘rish <span>→</span></button></div>
+        <div class="profile-card"><div class="avatar" id="profile-avatar">O‘</div><div class="profile-copy"><strong id="profile-name">Mehmon</strong><small id="profile-role">O‘quvchi</small></div><button class="profile-menu" id="profile-button" aria-label="Profilni sozlash">•••</button></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Menyuni ochish">☰</button>
+        <div class="breadcrumb"><span>Platforma</span><span class="crumb-divider">/</span><strong id="breadcrumb-current">Bosh sahifa</strong></div>
+        <div class="topbar-actions"><span class="live-indicator"><i></i> Ovoz berish ochiq</span><button class="top-profile" id="top-profile"><span class="small-avatar">O‘</span><span id="top-name">Mehmon</span><span class="chevron">⌄</span></button></div>
+      </header>
+
+      <section class="page active-page" id="page-home">
+        <div class="welcome-row"><div><p class="eyebrow"><span class="eyebrow-dot"></span> 2026–2027 O‘QUV YILI <span class="eyebrow-line"></span> 1-CHORAK</p><h1>Maktabimiz haqida<br>fikringiz <span class="highlight">muhim.</span></h1><p class="hero-description">Taklif bering, ovoz bering va maktab hayotidagi<br class="desktop-break"> ijobiy o‘zgarishlarning bir qismiga aylaning.</p><div class="hero-buttons"><button class="button button-primary" data-page="proposals">Takliflarga ovoz berish <span>→</span></button><button class="button button-outline" data-page="results"><span class="chart-mini">▥</span> Natijalarni ko‘rish</button></div></div>
+          <div class="hero-illustration" aria-label="O‘quvchilar ovozi maktabga o‘zgarish olib keladi"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-sun">✳</div><div class="hero-note note-one"><span>💡</span> Yangi fikrlar</div><div class="hero-note note-two"><span>✓</span> Haqiqiy o‘zgarish</div><div class="hero-people"><div class="person person-a"><div class="person-head"></div><div class="person-body"></div></div><div class="person person-b"><div class="person-head"></div><div class="person-body"></div></div><div class="person person-c"><div class="person-head"></div><div class="person-body"></div></div><div class="person person-d"><div class="person-head"></div><div class="person-body"></div></div></div><div class="hero-ground"></div></div>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon icon-violet">◈</span><span class="stat-change">Bu chorak</span></div><strong id="stat-proposals">04</strong><span class="stat-label">Faol takliflar</span><div class="stat-foot"><span class="status-dot violet-dot"></span> Ovoz berish davom etmoqda</div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon icon-green">♧</span><span class="stat-change">Faol ishtirok</span></div><strong id="stat-voters">128</strong><span class="stat-label">Ovoz bergan o‘quvchilar</span><div class="stat-foot"><span class="trend-up">↗ 12%</span> o‘tgan chorakka nisbatan</div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon icon-orange">✦</span><span class="stat-change">Birgalikda</span></div><strong id="stat-implemented">03</strong><span class="stat-label">Amalga oshgan g‘oyalar</span><div class="stat-foot"><span class="status-dot green-dot"></span> O‘quvchilar tashabbusi bilan</div></article>
+        </div>
+
+        <div class="section-heading"><div><p class="section-kicker">SIZNING NAVBATINGIZ</p><h2>Ovoz berish ochiq <span class="heading-count">04</span></h2></div><button class="link-button" data-page="proposals">Barchasini ko‘rish <span>→</span></button></div>
+        <div class="proposal-grid" id="home-proposals"></div>
+        <div class="bottom-banner"><div class="banner-icon">✳</div><div><strong>Maktab uchun g‘oyangiz bormi?</strong><p>Yangi taklif yuboring — birgalikda ko‘rib chiqamiz.</p></div><button class="button button-light" data-page="admin">Taklif yuborish <span>→</span></button></div>
+        <p class="prototype-note">Namuna platforma · Ovozlar va takliflar ushbu qurilmada saqlanadi</p>
+      </section>
+
+      <section class="page" id="page-proposals">
+        <div class="page-intro"><p class="eyebrow"><span class="eyebrow-dot"></span> O‘QUVCHILAR TASHABBUSI</p><h1>Takliflar <span class="highlight">maydoni.</span></h1><p class="hero-description">Maktabimizni yaxshilash uchun berilgan g‘oyalar bilan tanishing.<br class="desktop-break"> Siz uchun muhim bo‘lganiga ovoz bering.</p></div>
+        <div class="filter-row"><div class="filter-tabs"><button class="filter-tab selected" data-filter="all">Barchasi <span id="filter-count-all">4</span></button><button class="filter-tab" data-filter="open">Ovoz berish ochiq <span id="filter-count-open">4</span></button><button class="filter-tab" data-filter="closed">Yakunlangan</button></div><label class="search-box"><span>⌕</span><input id="proposal-search" type="search" placeholder="Takliflarni izlash..." aria-label="Takliflarni izlash"></label></div>
+        <div class="proposal-grid full-proposal-grid" id="all-proposals"></div>
+        <div class="empty-state hidden" id="empty-proposals"><span>⌕</span><h3>Taklif topilmadi</h3><p>Boshqa so‘z bilan qidirib ko‘ring.</p></div>
+        <div class="prototype-note">Namuna platforma · Ovozlar va takliflar ushbu qurilmada saqlanadi</div>
+      </section>
+
+      <section class="page" id="page-results">
+        <div class="page-intro results-intro"><p class="eyebrow"><span class="eyebrow-dot"></span> OCHIQ VA SHAFFOF</p><h1>Ovozlarimiz,<br><span class="highlight">natijalarimiz.</span></h1><p class="hero-description">Har bir ovoz o‘zgarish sari tashlangan qadam.<br class="desktop-break"> Jarayon va natijalar bilan tanishing.</p></div>
+        <div class="results-summary"><div><span class="results-summary-label">JAMI QATNASHUVCHI</span><strong id="results-voter-count">128</strong><small>o‘quvchi o‘z fikrini bildirdi</small></div><div class="summary-divider"></div><div><span class="results-summary-label">FAOL SO‘ROVNOMA</span><strong id="results-active-count">04</strong><small>taklif bo‘yicha ovoz berilmoqda</small></div><div class="summary-art">◌<span>✳</span></div></div>
+        <div class="section-heading results-heading"><div><p class="section-kicker">OVOZ BERISH NATIJALARI</p><h2>O‘quvchilar tanlovi</h2></div><span class="updated-label"><i></i> Jonli yangilanadi</span></div>
+        <div class="results-list" id="results-list"></div>
+        <div class="prototype-note">Namuna ma’lumotlar · Bu ko‘rsatkichlar haqiqiy maktab ovozlari emas</div>
+      </section>
+
+      <section class="page" id="page-admin">
+        <div class="page-intro"><p class="eyebrow"><span class="eyebrow-dot"></span> PLATFORMANI BOSHQARISH</p><h1>Admin <span class="highlight">paneli.</span></h1><p class="hero-description">Yangi taklif qo‘shing yoki o‘quvchilar yuborgan g‘oyalarni<br class="desktop-break"> boshqarib boring.</p></div>
+        <div class="admin-warning"><span>ⓘ</span><div><strong>Namuna boshqaruv paneli</strong><p>Bu demo versiyada administrator amallari himoyalanmagan. Haqiqiy foydalanish uchun server tomonda avtorizatsiya kerak.</p></div></div>
+        <div class="admin-layout"><div class="admin-form-card"><div class="form-card-heading"><span class="form-heading-icon">＋</span><div><h2>Yangi taklif qo‘shish</h2><p>O‘quvchilar ovoz berishi uchun so‘rovnoma yarating.</p></div></div>
+          <form id="proposal-form"><label class="field-label" for="proposal-title">Taklif nomi <span>*</span></label><input class="form-input" id="proposal-title" name="title" maxlength="90" placeholder="Masalan: Kutubxona vaqtini uzaytirish" required><label class="field-label" for="proposal-description">Qisqacha tavsif <span>*</span></label><textarea class="form-input textarea" id="proposal-description" name="description" maxlength="320" placeholder="Taklif nimani yaxshilaydi? O‘quvchilar uchun qanday foydasi bor?" required></textarea><div class="form-row"><div><label class="field-label" for="proposal-category">Yo‘nalish</label><select class="form-input" id="proposal-category" name="category"><option>O‘quv muhiti</option><option>Dars jadvali</option><option>Qulayliklar</option><option>Maktab qoidalari</option><option>Boshqa</option></select></div><div><label class="field-label" for="proposal-days">Ovoz berish muddati</label><select class="form-input" id="proposal-days" name="days"><option value="7">7 kun</option><option value="14" selected>14 kun</option><option value="21">21 kun</option></select></div></div><button class="button button-primary form-submit" type="submit">Taklifni e’lon qilish <span>→</span></button></form>
+        </div><div class="admin-side"><div class="admin-side-card"><span class="admin-side-icon">✦</span><h3>Yaxshi taklif qanday bo‘ladi?</h3><ul><li><span>✓</span> Aniq va tushunarli sarlavha</li><li><span>✓</span> Yechiladigan muammo</li><li><span>✓</span> O‘quvchilarga tegishli masala</li><li><span>✓</span> Hurmatli, xolis ifoda</li></ul></div><div class="admin-side-card moderation-card"><span class="status-dot orange-dot"></span><div><strong>Adolatli muhokama</strong><p>E’lon qilishdan oldin taklifning mazmuni va amalga oshirish imkoniyatini tekshiring.</p></div></div></div></div>
+        <div class="section-heading admin-proposals-heading"><div><p class="section-kicker">PLATFORMADAGI TAKLIFLAR</p><h2>Takliflarni boshqarish</h2></div></div><div class="admin-proposal-list" id="admin-proposal-list"></div>
+      </section>
+
+      <footer class="site-footer"><span>© 2026 Maktab Ovozi</span><span>O‘quvchilar ishtirokida, maktabimiz uchun <span class="footer-heart">♥</span></span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="profile-dialog" id="profile-dialog"><form id="profile-form"><button class="dialog-close" type="button" aria-label="Yopish">×</button><span class="dialog-icon">☺</span><h2>Ismingizni kiriting</h2><p>Demo rejimida ovozlaringiz brauzeringizda saqlanadi.</p><label class="field-label" for="voter-name">Ism (yoki taxallus)</label><input class="form-input" id="voter-name" maxlength="32" placeholder="Masalan: Dilnoza" autocomplete="name"><label class="field-label" for="voter-id">O‘quvchi ID (ixtiyoriy)</label><input class="form-input" id="voter-id" maxlength="32" placeholder="Masalan: 10-A-05"><p class="dialog-disclaimer">Bu demo haqiqiy shaxsni tasdiqlamaydi va ID raqamingizni xavfsiz himoya qilmaydi.</p><button class="button button-primary profile-save" type="submit">Saqlash <span>→</span></button></form></dialog>
+  <script src="main.css/mk.js"></script>
+</body>
+</html>
